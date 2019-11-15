@@ -8,9 +8,11 @@ export const LoadingComponent = styled.div`
   margin-right: 0;
   margin-top: -1px;
 
-  ${props => props.visible && css`
-    opacity: 1;
-    width: 28px;
-    margin-right: 8px;
-  `}
+  ${props =>
+    props.visible &&
+    css`
+      opacity: 1;
+      width: 28px;
+      margin-right: 8px;
+    `}
 `
