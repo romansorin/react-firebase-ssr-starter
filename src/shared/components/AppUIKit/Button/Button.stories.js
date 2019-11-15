@@ -11,10 +11,12 @@ storiesOf(`${titles.components}|${dirNames.uiKit}/Button`, module)
   .addDecorator(withDocs(Readme))
   .addDecorator(withKnobs)
   .add('default', () => {
-    return <Button
-      loading={boolean('Loading', false)}
-      disabled={boolean('Disabled', false)}
-    >
-      {text('Text', 'Button')}
-    </Button>
+    return (
+      <Button
+        loading={boolean('Loading', false)}
+        disabled={boolean('Disabled', false)}
+      >
+        {text('Text', 'Button')}
+      </Button>
+    )
   })

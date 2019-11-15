@@ -42,16 +42,18 @@ export const Button = styled(ButtonCleanProps)`
     background: ${Colors.darkPurpleHover};
   }
 
-  ${props => (props.disabled || props.loading) && css`
-    background: ${Colors.disabled};
-    pointer-events: none;
-
-    &:hover,
-    &:active,
-    &:focus {
+  ${props =>
+    (props.disabled || props.loading) &&
+    css`
       background: ${Colors.disabled};
-    }
-  `}
+      pointer-events: none;
+
+      &:hover,
+      &:active,
+      &:focus {
+        background: ${Colors.disabled};
+      }
+    `}
 `
 
 export const ButtonText = styled.div`
